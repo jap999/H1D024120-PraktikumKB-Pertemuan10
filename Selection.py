@@ -47,8 +47,8 @@ if __name__ == "__main__":
     del available_populasi[idx1]
     del available_fitness[idx1]
 
-    # Memilih Parent 2 menggunakan Tournament Selection
-    parent2, idx2 = tournament_selection(available_populasi,
+    # Memilih Parent 2 menggunakan Roulette Wheel Selection
+    parent2, idx2 = roulette_wheel_selection(available_populasi,
     available_fitness)
     # Menghapus parent2 dari daftar available_populasi dan
     available_fitness
