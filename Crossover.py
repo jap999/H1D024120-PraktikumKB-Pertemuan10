@@ -6,6 +6,7 @@ def one_point_crossover(parent1, parent2):
     anak2 = parent2[:titik_potong] + parent1[titik_potong:]
     return anak1, anak2 
 
+"""
 # Two-Point Crossover
 def two_point_crossover(parent1, parent2):
     titik1 = random.randint(1, len(parent1)-2)
@@ -30,6 +31,7 @@ def uniform_crossover(parent1, parent2):
             anak1.append(parent2[i])
             anak2.append(parent1[i])
     return anak1, anak2
+"""
 
 # PERBAIKAN: Wrap contoh kode dengan if __name__ == "__main__"
 # ALASAN: Saat import, kode di bawah tidak perlu dijalankan, hanya fungsi yang dibutuhkan
