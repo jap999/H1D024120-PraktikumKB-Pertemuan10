@@ -1,4 +1,5 @@
 import random
+"""
 # Swap Mutation
 def swap_mutation(kromosom):
     # Pastikan kromosom adalah list
@@ -18,6 +19,7 @@ def inversion_mutation(kromosom):
     # Perbaikan di sini: konversi hasil reversed ke list
     kromosom[posisi1:posisi2] = list(reversed(kromosom[posisi1:posisi2]))
     return kromosom
+"""
 
 # Uniform Mutation
 def uniform_mutation(kromosom, mutation_rate=0.1):
@@ -36,12 +38,16 @@ if __name__ == "__main__":
     anak1 = [0, 1, 1, 0, 1] # Contoh kromosom, sesuaikan dengankebutuhan Anda
 
     # Contoh penggunaan
+    """
     mutasi_anak1 = swap_mutation(anak1.copy()) # Swap Mutation
     mutasi_anak2 = inversion_mutation(anak1.copy()) # InversionMutation
+    """
     mutasi_anak3 = uniform_mutation(anak1.copy()) # UniformMutation
 
     # Menampilkan hasil setelah mutasi
     print("\nAnak Setelah Mutasi:")
+    """
     print(f"Anak 1 (Swap Mutation): {mutasi_anak1}")
     print(f"Anak 2 (Inversion Mutation): {mutasi_anak2}")
+    """
     print(f"Anak 3 (Uniform Mutation): {mutasi_anak3}")
