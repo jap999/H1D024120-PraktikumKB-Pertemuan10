@@ -17,6 +17,7 @@ def roulette_wheel_selection(populasi, fitness_populasi):
             return populasi[i], i # Mengembalikan individu dan indeksnya
     return populasi[-1], len(populasi)-1 # Jika tidak ada yang memenuhi, kembalikan individu terakhir
 
+"""
 # Fungsi untuk Tournament Selection
 def tournament_selection(populasi, fitness_populasi, k=3):
     if len(populasi) < k:
@@ -25,6 +26,7 @@ def tournament_selection(populasi, fitness_populasi, k=3):
     peserta = [(populasi[i], fitness_populasi[i], i) for i in peserta_indices]
     peserta.sort(key=lambda x: x[1], reverse=True)
     return peserta[0][0], peserta[0][2] # Mengembalikan individu dan indeksnya
+"""
 
 # PERBAIKAN: Wrap contoh kode dengan if __name__ == "__main__"
 # ALASAN: Saat import, kode di bawah tidak perlu dijalankan, hanya fungsi yang dibutuhkan
